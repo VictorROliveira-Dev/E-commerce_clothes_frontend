@@ -1,0 +1,117 @@
+.header-top {
+  background-color: var(--color-main);
+  border-bottom: 1px solid var(--color-secondary);
+  padding-block: 0.875rem;
+}
+.header-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.header-container span:first-child {
+  margin-right: 2rem;
+}
+.header-contact span,
+.header-alert,
+.header-top {
+  font-size: var(--small-font-size);
+}
+.header-alert {
+  color: var(--text-color);
+  font-weight: var(--weight-600);
+}
+.header-top-action {
+  color: var(--text-color);
+  transition: all 0.2s ease-in-out;
+  font-weight: var(--weight-700);
+}
+.header-top-action:hover {
+  color: var(--text-color-light);
+}
+.nav,
+.nav-menu,
+.nav-list,
+.header-user-action {
+  display: flex;
+  align-items: center;
+}
+.nav {
+  height: calc(var(--header-height) + 2.5rem);
+  justify-content: space-between;
+  column-gap: 1rem;
+}
+.nav-logo {
+  width: 100px;
+}
+.nav-menu {
+  width: 100%;
+  margin-left: 2.5rem;
+}
+.nav-list {
+  margin-right: auto;
+  column-gap: 2.5rem;
+}
+.nav-link {
+  color: var(--color-extra);
+  font-weight: var(--weight-700);
+  transition: all 0.2s var(--transition);
+}
+.header-search {
+  width: 340px;
+  position: relative;
+}
+.header-search .form-input {
+  width: 100%;
+  color: var(--text-color);
+  font-weight: var(--weight-600);
+}
+.form-input {
+  border: 1px solid var(--border-color-alt);
+  padding-inline: 1rem;
+  height: 45px;
+  border-radius: 0.25rem;
+  font-size: var(--small-font-size);
+}
+.search-button {
+  position: absolute;
+  top: 24%;
+  right: 1.25rem;
+  cursor: pointer;
+}
+.search-button i {
+  font-size: 26px;
+  color: var(--border-color-alt);
+}
+.header-user-action {
+  column-gap: 1.25rem;
+}
+.header-action-btn {
+  position: relative;
+}
+.header-action-btn i {
+  font-size: 30px;
+  color: var(--color-extra);
+  transition: all 0.3s var(--transition);
+}
+.header-action-btn i:hover {
+  color: var(--color-terciary);
+}
+.header-action-btn .count {
+  position: absolute;
+  top: -0.625rem;
+  right: -0.625rem;
+  background-color: var(--color-main);
+  color: var(--body-color);
+  height: 18px;
+  width: 18px;
+  line-height: 18px;
+  border-radius: 50%;
+  text-align: center;
+  font-size: var(--small-font-size);
+  font-weight: var(--weight-700);
+}
+/*===== Active Links =====*/
+.active-link,
+.nav-link:hover {
+  color: var(--color-terciary);
+}

@@ -1,0 +1,140 @@
+/*===== OTHERS CSS =====*/
+@import "./header-nav.css";
+@import "./section-home.css";
+@import "./section-categories.css";
+@import "./section-products.css";
+@import "./section-deals.css";
+@import "./section-arrivals.css";
+@import "./section-showcase.css";
+/*===== FONTS =====*/
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,400;0,500;0,600;0,700;1,100;1,200&display=swap");
+/*===== VARIABLES CSS =====*/
+:root {
+  --header-height: 4rem;
+  /*===== COLORS =====*/
+  --color-main: #94add7;
+  --color-secondary: #0f2c59;
+  --color-terciary: #e57c23;
+  --color-extra: #35155D;
+  --title-color: #040d12;
+  --text-color: #000;
+  --text-color-light: #eeeeee;
+  --color-prices: #016A70;
+  --body-color: #F0F0F0;
+  --container-color: #4477CE;
+  --border-color-alt: #b9b4c7;
+  /*===== Fonts and Typography =====*/
+  --body-font: "Montserrat", sans-serif;
+  --h1-font-size: 2.75rem;
+  --h2-font-size: 2rem;
+  --h3-font-size: 1.75rem;
+  --h4-font-size: 1.375rem;
+  --big-font-size: 3.5rem;
+  --large-font-size: 1.125rem;
+  --normal-font-size: 1rem;
+  --small-font-size: 0.875rem;
+  --smaller-font-size: 0.75rem;
+  --tiny-font-size: 0.6875rem;
+  /*===== Font Weight =====*/
+  --weight-100-italic: italic;
+  --weight-100: 100;
+  --weight-200: 200;
+  --weight-400: 400;
+  --weight-500: 500;
+  --weight-600: 600;
+  --weight-700: 700;
+  /*===== TRANSITION =====*/
+  --transition: cubic-bezier(0, 0, 0.05, 1);
+}
+/*===== Responsive Typography =====*/
+@media screen and (max-width: 1200px) {
+  :root {
+    --h1-font-size: ;
+    --h2-font-size: ;
+    --h3-font-size: ;
+    --h4-font-size: ;
+    --big-font-size: ;
+    --large-font-size: ;
+    --normal-font-size: ;
+    --small-font-size: ;
+    --smaller-font-size: ;
+    --tiny-font-size: ;
+  }
+}
+/*===== BASE =====*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+input,
+textarea,
+body {
+  color: var(--text-color);
+  font-family: var(--body-font);
+  font-size: var(--normal-font-size);
+  font-weight: var(--weight-400);
+}
+body {
+  background-color: var(--body-color);
+}
+h1,
+h2,
+h3,
+h4 {
+  font-family: var(--body-font);
+  color: var(--title-color);
+  font-weight: var(--weight-600);
+}
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+p {
+  line-height: 1.5rem;
+}
+img {
+  max-width: 100%;
+}
+button,
+textarea,
+input {
+  background-color: transparent;
+  border: none;
+  outline: none;
+}
+/*===== Changes in Scrollbar =====*/
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background-color: #b9b4c7;
+}
+::-webkit-scrollbar-thumb {
+  background-color: #0f2c59;
+}
+/*===== Reusable CSS Classes =====*/
+.container {
+  max-width: 1320px;
+  margin-inline: auto;
+  padding-inline: 0.75rem;
+}
+.grid {
+  display: grid;
+  gap: 1.5rem;
+}
+.section-lg {
+  padding-block: 4rem;
+}
+.section {
+    padding-block: 2rem;
+}
+.section-title {
+    font-size: var(--h4-font-size);
+    margin-bottom: 1.5rem;
+}
+.section-title span {
+    color: var(--color-terciary);
+}
